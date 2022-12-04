@@ -7,6 +7,7 @@ if __name__ == '__main__':
     option = str(input(
         "Введите, как заполнить кортеж: \"Вручную\" или \"Автоматически\"\n"))
     if option.lower() == "вручную":
+        print("Введите значения через пробел: ")
         A = list(map(int, input().split()))
         if (len(A) == 0):
             print("В кортеже нет значений!", file=sys.stderr)
